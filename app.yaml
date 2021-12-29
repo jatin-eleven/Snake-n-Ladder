@@ -14,8 +14,8 @@
 
 runtime: python
 env: flex
-entrypoint: gunicorn -b :$PORT main:app
-# entrypoint: gunicorn -b :$PORT app:app
+# entrypoint: gunicorn -b :$PORT main:app
+entrypoint: gunicorn -b :$PORT app:app
 # entrypoint: gunicorn -b :$PORT demosite.wsgi:main
 
 runtime_config:
