@@ -24,7 +24,7 @@ def home():
 
 
 # Firebase 
-cred = credentials.Certificate('E:/Sanskrut/CRUD/service_account.json')
+cred = credentials.Certificate('./service_account.json')
 # cred = credentials.Certificate('/workspace/service_account.json')
 default_app = firebase_admin.initialize_app(cred)
 db = firestore.client()
